@@ -31,4 +31,11 @@ describe Concert do
     expect(Concert.all).not_to include(concert)
   end
 
+  it "requires a valid date" do
+    venue = Venue.create(:name => "Shoreline Theater")
+
+    concert =  venue.concerts.create(:artist_name => "Bruce Springsteen", :date => "2013/08")
+    expect(Concert.all).not_to include(concert)
+  end
+
 end
