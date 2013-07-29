@@ -1,0 +1,26 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: rockr_development
+  pool: 5
+  username: ericmooney
+  password:
+  host: localhost
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: rockr_test
+  pool: 5
+  username: ericmooney
+  password:
+  host: localhost
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: rockr_production
+  pool: 5
+  username: ericmooney
+  password:
+  host: localhost
