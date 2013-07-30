@@ -1,4 +1,9 @@
 %h1 Rockr
 
-= link_to "New Venue", 'new_venue_path', :id => "new_venue_link", :remote => true
-= link_to "New Concert", 'new_concert_path', :id => "new_concert_link", :remote => true
+= link_to "New Venue", new_venue_path, :id => "new_venue_link", :remote => true
+= link_to "New Concert", new_concert_path, :id => "new_concert_link", :remote => true
+
+#forms
+
+#concerts
+  = render "static_pages/concerts"

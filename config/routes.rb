@@ -3,5 +3,4 @@ Rockr::Application.routes.draw do
   resources :concerts, :only => [:new, :create]
 
   root :to => 'static_pages#index'
-
 end

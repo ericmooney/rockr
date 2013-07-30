@@ -1,0 +1,11 @@
+= form_for @concert, remote: true do |f|
+  = f.label :artist_name
+  = f.text_field :artist_name
+
+  = f.label :date
+  = f.datetime_select :date
+
+  = f.label :venue, "Venue"
+  = f.collection_select :venue_id, Venue.ordered, :id, :name
+
+  = f.submit "Save Concert"
