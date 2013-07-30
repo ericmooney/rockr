@@ -28,6 +28,18 @@ describe "homepage", js: true do
       expect(page).to_not have_css("form#new_venue")
       expect(page.find('#concerts')).to have_content("The Slowdown")
     end
+
+    it "updates the list of venues for a new concert" do
+      click_link "New Venue"
+
+      fill_in "Name", with: "The Fillmore"
+      click_button "Save Venue"
+
+      click_link "New Concert"
+
+      expect(page.find('#concert_venue_id')).to have_content("The Fillmore")
+    end
+
   end
 
   describe "submitting new concert form" do
