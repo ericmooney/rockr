@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "homepage" do
+describe "homepage", js: true do
   it "displays the New Venue form via AJAX" do
     visit root_path
 

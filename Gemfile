@@ -32,10 +32,12 @@ group :test, :development do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'capybara'
+  gem 'selenium-webdriver'
 end
 
 gem 'jquery-rails'
 gem 'haml-rails'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
