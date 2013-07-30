@@ -1,8 +1,7 @@
 Rockr::Application.routes.draw do
+  resources :venues, :only => [:new, :create]
+  resources :concerts, :only => [:new, :create]
 
-  get "static_pages/index"
-
-  # root :to => 'welcome#index'
-
+  root :to => 'static_pages#index'
 
 end
